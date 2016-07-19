@@ -1,5 +1,10 @@
+body {
+    background: #f2eeb3;
+    color: #59323C;
+}
+
 header.main-nav {
-    background: #000 none repeat scroll 0 0;
+    background: #260126;
     color: #fff;
     font-family: Comic Sans MS;
     font-size: 15px;
@@ -31,7 +36,7 @@ header.main-nav ul li {
 }
 
 header .navigation li a {
-    color: #fff;
+    color: #F2EEB3;
 }
 
 header .navigation li a:hover {
@@ -106,7 +111,7 @@ header .navigation.nav-pills > li.active > a {
 }
 
 .main-cont {
-    background: #fdfdfd none repeat scroll 0 0;
+    background: #f2eeb3;
     color: #979797;
     margin-top: 100px;
 }
@@ -332,6 +337,7 @@ header .navigation.nav-pills > li.active > a {
 }
 
 .about-content {
+    color: #59323C;
     padding: 40px 10px 10px 10px;
 }
 
@@ -365,21 +371,23 @@ div[ng-view].ng-enter-active {
   transition: 7s;
   margin-left: -100%;
 }*/
+
 @media screen and (min-width: 768px) {
-  .main-nav span {
-    display: none;
-  }
-  .search-cont {
-    background: transparent none repeat scroll 0 0;
-    bottom: 0;
-    float: right;
-    position: relative;
-    right: 80px;
-    transition: none 0s ease 0s ;
-    width: auto;
-  }
-  header.main-nav ul li {
-    float: left;
-    padding: 0;
-  }
+    .main-nav span {
+        display: none;
+    }
+    .search-cont {
+        background: transparent none repeat scroll 0 0;
+        bottom: 0;
+        float: right;
+        position: relative;
+        right: 80px;
+        transition: none 0s ease 0s;
+        width: auto;
+    }
+    header.main-nav ul li {
+        border-bottom: medium none;
+        float: left;
+        padding: 0;
+    }
 }
