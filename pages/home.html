@@ -1,0 +1,10 @@
+<div class="container main-cont">
+	<div class="row">
+		<div class="col-sm-12">
+			<div ng-repeat="product in car.products | orderBy:'name' | filter:search "  class="product-info" >
+				<product-panel>
+				</product-panel>
+			</div>
+		</div>
+	</div>
+</div>

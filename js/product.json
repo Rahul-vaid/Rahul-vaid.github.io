@@ -1,0 +1,154 @@
+{ 
+	"products":[
+		{
+			"id":"1",
+			"name": "Canvas Spark",
+			"description": "Spark a new beginning with the stunning, state of the art feature-packed Micromax Canvas Spark! Discover more on the Big vibrant display, enjoy a seamless performance and capture your world with the 8MP+2MP camera!",
+			"canPurchase": "false",
+			"upcoming": "",
+			"images": [
+				{
+					"full": "images/spark.png",
+					"thumb":""
+				}
+			],
+			"reviews": [
+				{
+					"stars": 5,
+					"body": "I love this phone !!",
+					"author": "rahulv@gmail.com"
+				}
+			],
+			"designs": [
+				{
+					"screenSize": "11.93cm(4.7)",
+					"screenResolution": "qHD (960*540)"
+				}
+			],
+			"batterys": [
+				{
+					"battteryCapacity": "2000mAh",
+					"talktime": "7Hours*"
+				}
+			],
+			"cameras" : [
+				{
+					"cameraResolution":"5MP Rear camera, 0.3MP Front camera" ,
+					"flash":"YES" ,
+					"autoFocus":"Rear camera AF, Front camera FF" ,
+					"recordPlay":"720p"
+				}
+			],
+			"storages" : [
+				{
+					"ram": "1 GB",
+					"rom": "8 GB",
+					"phoneMemory":"5.85 GB (apps + phone storage)",
+					"expMemory":"Up to 32GB" ,
+					"sensors":"G-sensor, Proximity sensor, Light sensor"
+				}
+			]
+		},
+			
+		{
+			"id":"2",
+			"name": "Canvas Play",
+			"description": "Enjoy your favourite games, movies and videos in perfect clarity on the BIG 13.97cm (5.5) FWVGA Screen of the Micromax Canvas Play. Make your entertainment sessions last longer with the 2820mAh marathon battery. Introducing the Micromax Canvas Play-Can Get a Bigger Picture!",
+			"canPurchase": "false",
+			"upcoming": "",
+			"images": [
+				{
+					"full": "images/play.png",
+					"thumb":""
+				}
+			],
+				"reviews": [
+				{
+					"stars": 2,
+					"body": "It doesn't have many features",
+					"author": "xyz@gmail.com"
+				}
+			],
+			"designs": [
+				{
+					"screenSize": "11.93cm(4.7)",
+					"screenResolution": "HD (1200*1024)"
+				}
+			],
+			"batterys": [
+				{
+					"battteryCapacity": "2500mAh",
+					"talktime": "8Hours*"
+				}
+			],
+			"cameras" : [
+				{
+					"cameraResolution":"8MP AF Rear(2448*3264) ; 2MP FF(1600*1200)(Front)" ,
+					"flash":"YES, Rear camera only" ,
+					"autoFocus":"YES, Rear camera only" ,
+					"recordPlay":"720p"
+				}
+			],
+			"storages" : [
+				{
+					"ram": "2 GB",
+					"rom": "8 GB",
+					"phoneMemory":"5 GB (for apps and mass storage)",
+					"expMemory":"Up to 32GB" ,
+					"sensors":"G-sensor, Proximity sensor, Light sensor"
+				}
+			]
+		},
+
+		{
+			"id":"3",
+			"name": "Canvas Selfie",
+			"description": "Presenting the fabulous Canvas Selfie that enhances your selfies with a plethora of inbuilt beauty tools. Bask in the attention and steal all the likes, shares and comments in your social circle! Get ready to Instaglam with its 13MP Front and Rear cameras!",
+			"canPurchase": "false",
+			"upcoming": "",
+			"images": [
+				{
+					"full": "images/selfie.png",
+					"thumb":""
+				}
+			],
+			"reviews": [
+				{
+					"stars": 4,
+					"body": "looking gud to me",
+					"author": "joe@gmail.com"
+				}
+			],
+			"designs": [
+				{
+					"screenSize": "11.93cm(4.7)",
+					"screenResolution": "qHD (960*540)"
+				}
+			],
+			"batterys": [
+				{
+					"battteryCapacity": "3000mAh",
+					"talktime": "10Hours*"
+				}
+			],
+			"cameras" : [
+				{
+					"cameraResolution":"8MP AF Rear(2448*3264) ; 2MP FF(1600*1200)(front)" ,
+					"flash":"YES, Rear camera only" ,
+					"autoFocus":"YES, Rear camera only" ,
+					"recordPlay":"720p"
+				}
+			],
+			"storages" : [
+				{
+					"ram": "1GB",
+					"rom": "8GB",
+					"phoneMemory":"4.5 GB for apps and mass storage",
+					"expMemory":"Up to 32GB" ,
+					"sensors":"G-sensor, Proximity sensor, Light sensor"
+				}
+			]
+		}
+	]		
+}
+	
