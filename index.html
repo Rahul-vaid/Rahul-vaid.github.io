@@ -6,29 +6,53 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- logo in title bar -->
+    <link rel="SHORTCUT ICON" href="img/rv.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Mirza|Roboto+Slab|Slabo+27px|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 </head>
 
-<body>
-    <header class="main-nav">
-        <span ng-init="showSearch=true" ng-click="showSearch = !showSearch">Click</span>
-        <div ng-class="{ 'search' : !showSearch }" class="search-cont">
-            <div class="search-bar">
-                <ul class="nav navigation">
-                    <li ng-init="route=1" ng-class="{ active : route==1 }"> <a ng-click="route=1" href="#home">Who AM I</a></li>
-                    <li ng-class="{ active : route==2 }"><a ng-click="route=2" href="#about">Portfolio</a></li>
-                    <li ng-class="{ active : route==3 }"><a ng-click="route=3" href='#contact'>Contact</a></li>
-                </ul>
+<body class="profile">
+    <header class="main-nav" ng-controller="HeaderController as header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span class="contact-me">
+                		<a ng-click="showSlider=false" href='#contact' title="Contact Me"><img src="img/rv.jpg" alt="Image not loaded" title="Contact Me"></a>
+                	</span>
+                    <span ng-click="showSlider = !showSlider" class="mobile-menu-link">Menu</span>
+                    <div ng-class="{ 'slider' : showSlider }" class="slider-cont">
+                        <div class="nav-cont">
+                            <ul class="nav navigation">
+                                <li ng-class="{active: $route.current.activetab == 'about'}" class="animate-show">
+                                    <a ng-click="showSlider=false" href="#about">Who AM I</a>
+                                </li>
+                                <li ng-class="{active: $route.current.activetab == 'portfolio'}" class="animate-show">
+                                    <a ng-click="showSlider=false" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li ng-class="{active: $route.current.activetab == 'contact'}" class="animate-show">
+                                    <a ng-click="showSlider=false" href='#contact'>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <div ng-view>
-        <!-- angular templating -->
-        <!-- this is where content will be injected -->
+    <div class="container main-cont">
+        <div class="row">
+            <div class="col-sm-12">
+                <div ng-view>
+                    <!-- angular templating -->
+                    <!-- this is where content will be injected -->
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
