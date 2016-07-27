@@ -1,17 +1,18 @@
-
-			<div ng-controller="skillController" class="about-content">
-				<h2> Let me introduce myself</h2>
-				<p>
-					 My name is <strong>Rahul Vaid</strong> and am a freelance web developer based in India. Working with pixels and imagination, I create websites with responsive design and are passionate about design. I did a lot of Front End and responsive development. In my spare time you can find me spending time with my family, or with my friends. Currently I am working with TechAspect Solutions Inc. as a Software Engineer in User Interface (UI).
-				</p>
-				<div>
-					<h2>Skills</h2>
-					<p>Some of the skills I have</p>
-					<ul class="skill-set">
-						<li ng-repeat="skill in skills">{{skill}}</li>
-					</ul>
-					<p>I am majorly a Front End Developer who like to meet new challenges, always in search of new techniques and keep constantly updated me on new trends. But I take care not only of web development, occasionally I also like to work on Photoshop.
-					</p>	             
-				</div>
-				
-			</div>
+<div ng-controller="skillController" class="about-content">
+    <h2> Let me introduce myself</h2>
+    <img src="img/rv1.jpg" alt="Image not Loaded" title="It's me">
+    <p>
+        My name is <a href="https://plus.google.com/u/0/+RahulVaid89" class="underline-from-left" title="Know more about me" target="_blank">Rahul Vaid</a> and am a freelance web developer based in India. Working with pixels and imagination, I create websites with responsive design and are passionate about design. I did a lot of Front End and responsive development. In my spare time you can find me spending time with my family, or with my friends. Currently I am working with TechAspect Solutions Inc. as a Software Engineer in User Interface (UI).
+    </p>
+    <div ng-controller="skillListController">
+        <h2 ng-click="skillset = !skillset" title="Click to see">Skill-Set</h2>
+        <div ng-class="{ 'ng-hide' : skillset }"  class="skill-cont">
+            <p>Some of the skills I have</p>
+            <ul class="skill-set">
+                <li ng-repeat="skill in skills">{{skill}}</li>
+            </ul>
+        </div>
+        <p>I am majorly a Front End Developer who like to meet new challenges, always in search of new techniques and keep constantly updated me on new trends. But I take care not only of web development, occasionally I also like to work on Photoshop.
+        </p>
+    </div>
+</div>

@@ -11,6 +11,11 @@
 			$scope.skills= data.skills;
 		})
 	}])
+	// controller for hiding and showing skill list
+	app.controller('skillListController', ['$scope',function($scope){
+		$scope.skillset = true;
+
+	}])
 	// configure our routes
 	app.config(function($routeProvider) {
 		$routeProvider
