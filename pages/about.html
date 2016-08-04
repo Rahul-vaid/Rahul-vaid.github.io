@@ -4,8 +4,9 @@
     <p>
         My name is <a href="https://plus.google.com/u/0/+RahulVaid89" class="underline-from-left" title="Know more about me" target="_blank">Rahul Vaid</a> and am a freelance web developer based in India. Working with pixels and imagination, I create websites with responsive design and are passionate about design. I did a lot of Front End and responsive development. In my spare time you can find me spending time with my family, or with my friends. Currently I am working with TechAspect Solutions Inc. as a Software Engineer in User Interface (UI).
     </p>
-    <div ng-controller="skillListController">
+    <div ng-controller="skillListController" class="skillset-desc">
         <h2 ng-click="skillset = !skillset" title="Click to see">Skill-Set</h2>
+        <p class="test" ng-class="ng-add"> <span ng-repeat="skill in skills">{{skill}}</span></p>
         <div ng-class="{ 'ng-hide' : skillset }"  class="skill-cont">
             <p>Some of the skills I have</p>
             <ul class="skill-set">

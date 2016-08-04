@@ -367,6 +367,41 @@ header span.contact-me a:focus {
     animation-fill-mode: forwards;
     animation-direction: normal;
 }
+@keyframes test {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -62%;
+    }
+}
+.about-content div.skillset-desc {
+    position: relative;
+    overflow: hidden;
+}
+.test {
+    left: 100%;
+    position: absolute;
+    top: 35px;
+    width: 62%;
+}
+.about-content p.test {
+    animation: 15s test ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+}
+.about-content p.test span::after {
+    content: ",";
+}
+.about-content p.test span:last-chilf {
+    content: ",";
+}
+.about-content p.test span:last-child::after {
+    content: ".";
+}
+
 .social-btn {
     width: 40px;
     height: 40px;
