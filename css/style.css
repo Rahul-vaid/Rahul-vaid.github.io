@@ -453,6 +453,18 @@ header span.contact-me a:focus {
 .btn-default:hover, .btn-default:focus {
     color: #fff;
 }
+.profile-container ul button {
+    background: transparent ;
+    margin: 10px 0 0;
+     -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+.profile-container ul button:hover,.profile-container ul button:focus {
+    background: #260126 ;
+    border-color: #260126;
+}
 .facebook-color:hover,.facebook-color:focus {
     border: 1px solid #8b9dc3;
     background-color: #8b9dc3;
@@ -469,6 +481,12 @@ header span.contact-me a:focus {
 }
 .about-content.contact-container ul {
      margin: 20px 0 0;
+}
+.profile .profile-container {
+    text-align: left;
+}
+.profile-container h2 {
+    text-align: center;
 }
 @media screen and (min-width: 768px) {
     .main-nav span.mobile-menu-link {

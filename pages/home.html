@@ -1,11 +1,10 @@
-
-			<div class="about-content">
-				<h2> Portfolio</h2>
-				<p>
-					Aenean molestie vestibulum arcu, eget hendrerit felis interdum vitae. Vestibulum dictum velit eget ante consectetur pretium! Sed ac lacinia turpis. Maecenas at feugiat eros. Duis at fringilla orci! Sed risus metus, posuere eget consequat non, viverra at nisi. Suspendisse quis pretium sem, sit amet cursus mi. Cras eget urna tristique, efficitur mi vitae, commodo mauris. Sed vestibulum nisi quis magna viverra feugiat. Donec eget diam ut urna ultrices sodales at vitae sapien. Maecenas felis eros, ultrices vitae ullamcorper id; ultricies vitae massa. Curabitur nec scelerisque urna, eu venenatis lorem. Maecenas non nulla sit amet ligula malesuada auctor eget nec turpis.
-
-					Mauris at porta felis. Duis porttitor lacinia bibendum. Phasellus placerat nisi libero, id dapibus lacus vulputate at. Sed nec diam faucibus, tincidunt nunc ac, eleifend ante. Ut id est nec erat eleifend consequat. Ut dapibus sagittis magna, a aliquam libero faucibus eu. Aliquam erat volutpat. Sed consectetur arcu congue justo cursus faucibus.
-
-				</p>
-				
-			</div>
+<div ng-controller="profileSummaryController" class="about-content profile-container">
+    <h2> Profile Summary</h2>
+    <p>
+        <ul>
+            <li ng-repeat="summaryList in summary | limitTo:quantity">{{summaryList}}</li>
+            <!-- loading rest of the data from profile summary json file -->
+            <button ng-click="hidebtn()" ng-if="showBtn" class="btn btn-default">Click to load more..</button>
+        </ul>
+    </p>
+</div>
