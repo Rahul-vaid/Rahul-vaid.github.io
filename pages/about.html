@@ -2,11 +2,11 @@
     <h2> Let me introduce myself</h2>
     <img src="img/rv1.jpg" alt="Image not Loaded" title="It's me">
     <p>
-        My name is <a href="https://plus.google.com/u/0/+RahulVaid89" class="underline-from-left" title="Know more about me" target="_blank">Rahul Vaid</a> and am a freelance web developer based in India. Working with pixels and imagination, I create websites with responsive design and are passionate about design. I did a lot of Front End and responsive development. In my spare time you can find me spending time with my family, or with my friends. Currently I am working with TechAspect Solutions Inc. as a Software Engineer in User Interface (UI).
+        My name is <a href="https://plus.google.com/u/0/+RahulVaid89" class="underline-from-left" title="Know more about me" target="_blank">Rahul Vaid</a><span class="horoscope" title="Libran">&#9806;</span> and am a freelance web developer based in India. Working with pixels and imagination, I create websites with responsive design and are passionate about design. I did a lot of Front End and responsive development. In my spare time you can find me spending time with my family, or with my friends. Currently I am working with TechAspect Solutions Inc. as a Software Engineer in User Interface (UI).
     </p>
     <div ng-controller="skillListController" class="skillset-desc">
         <h2 ng-click="skillset = !skillset" title="Click to see">Skill-Set</h2>
-        <p class="test" ng-class="ng-add"> <span ng-repeat="skill in skills">{{skill}}</span></p>
+        <p ng-class="{ 'ng-hide' : !skillset }"  class="scrolling-content" >&#9755;&#9755;&#32;<span ng-repeat="skill in skills">{{skill}}</span>&#9754;&#9754;</p>
         <div ng-class="{ 'ng-hide' : skillset }"  class="skill-cont">
             <p>Some of the skills I have</p>
             <ul class="skill-set">
