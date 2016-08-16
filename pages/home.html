@@ -4,7 +4,15 @@
         <ul>
             <li ng-repeat="summaryList in summary | limitTo:quantity">{{summaryList}}</li>
             <!-- loading rest of the data from profile summary json file -->
-            <button ng-click="hidebtn()" ng-if="showBtn" class="btn btn-default">Click to load more..</button>
+            <button  ng-click="hidebtn()" ng-if="showBtn" class="btn btn-default">Click to load more..</button>
+            <!-- loader  -->
+            <div class='loader' ng-class="{ 'ng-hide' : loader }">
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+            </div>
         </ul>
     </p>
 </div>

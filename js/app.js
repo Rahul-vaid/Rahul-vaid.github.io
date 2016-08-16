@@ -13,22 +13,24 @@
         }])
         //controller for profile summary
     app.controller('profileSummaryController', function($http, $scope, $timeout) {
+            $scope.loader = true;
             $http.get('js/profile-summary.json').success(function(data) {
                     $scope.summary = data.summary;
                     console.log(data.summary.length);
                     // assigning json data to a variable profiledata
                     $scope.profiledata = data;
-                    // limiting the list initially to 5 only		
+                    // limiting the list initially to 5 only        
                     $scope.quantity = 5;
                     $scope.showBtn = true;
                 })
-                // removing btn click to load more from DOM
+                // removing btn click to load more from DOM and showing loader
             $scope.hidebtn = function() {
+                $scope.loader = false;
+                $scope.showBtn = false;
                 $timeout(function() {
                     $scope.quantity = $scope.profiledata.summary.length;
-                    $scope.showBtn = false;
-                }, 2000)
-
+                    $scope.loader = true;
+                }, 3000)
             }
         })
         // controller for hiding and showing skill list

@@ -1,4 +1,4 @@
-/*
+    /*
 Use the following CSS rules to specify these families:
 font-family: 'Aref Ruqaa', serif;
 font-family: 'Mirza', cursive;
@@ -27,9 +27,11 @@ h6,
 .h6 {
     font-family: "Aref Ruqaa", serif;
 }
+
 .horoscope {
     margin: 0 0 0 3px;
 }
+
 header.main-nav {
     background: #260126;
     color: #fff;
@@ -44,8 +46,8 @@ header.main-nav {
     z-index: 999;
 }
 
-.main-nav span {
-    cursor: pointer;
+.main-nav span.logo {
+    /*cursor: pointer;*/
     display: inline-block;
     float: right;
     padding: 3px 0;
@@ -126,7 +128,6 @@ header .navigation.nav-pills > li.active > a {
     transition: 0.5s linear right;
 }
 
-
 .main-cont {
     background: #f2eeb3;
     color: #979797;
@@ -186,14 +187,6 @@ header .navigation.nav-pills > li.active > a {
     color: #fff;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
-
 
 body .animate-show.ng-hide-add,
 body .animate-show.ng-hide-remove {
@@ -290,9 +283,13 @@ header .navigation li.active > a {
     color: #fff;
 }
 
-header span.contact-me img {
+header span.contact-me .logo {
+     background: #fff ;
     border-radius: 50%;
     box-shadow: 1px 1px 10px 1px #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
     width: 60px;
 }
 
@@ -332,12 +329,15 @@ header span.contact-me a:focus {
     margin: 0 0 20px;
     text-decoration: underline;
 }
-.about-content p > a.underline-from-left,.about-content p > a.underline-from-left:hover {
+
+.about-content p > a.underline-from-left,
+.about-content p > a.underline-from-left:hover {
     cursor: pointer;
     color: #59323c;
     font-weight: bold;
     text-decoration: none;
 }
+
 .about-content ul.skill-set li:hover {
     background: #260126 none repeat scroll 0 0;
     border: 1px solid #260126;
@@ -347,7 +347,6 @@ header span.contact-me a:focus {
     -o-transition: all 0.5s linear 0s;
     transition: all 0.5s linear 0s;
 }
-
 
 .about-content .skill-cont.ng-hide-add {
     animation: 1s myChange 1;
@@ -366,32 +365,39 @@ header span.contact-me a:focus {
     position: relative;
     overflow: hidden;
 }
+
 .scrolling-content {
     left: 100%;
     position: absolute;
     top: 35px;
     width: 100%;
 }
+
 .about-content p.scrolling-content {
     animation: 15s scrolling, scroll-fade 5s 20s;
     animation-timing-function: linear;
-   animation-direction: normal;
-    animation-fill-mode:backwards;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
     left: 0;
     opacity: 0;
 }
+
 .about-content p.scrolling-content span::after {
     content: ", ";
 }
+
 .about-content p.scrolling-content span:last-child {
     content: ", ";
 }
+
 .about-content p.scrolling-content span:last-child::after {
     content: ". ";
 }
+
 .scrolling-content span {
     font-weight: bold;
 }
+
 .social-btn {
     width: 40px;
     height: 40px;
@@ -406,19 +412,24 @@ header span.contact-me a:focus {
     line-height: 40px;
     text-align: center;
 }
-.social-btn:hover, .social-btn:focus {
+
+.social-btn:hover,
+.social-btn:focus {
     background: #59323C;
     color: #fff;
 }
+
 .about-content .mail-link {
     font-size: 22px;
     text-align: center;
 }
+
 .btn-common {
     border: 1px solid #e74c3c;
     color: #e74c3c;
     background-color: transparent;
 }
+
 .btn-custom {
     text-transform: uppercase;
     font-weight: 400;
@@ -426,58 +437,170 @@ header span.contact-me a:focus {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 .facebook-color {
     color: #8b9dc3;
     border-color: #8b9dc3;
 }
+
 .linkedin-color {
     color: #0075B2;
     border-color: #0075B2;
 }
-.btn-default:hover, .btn-default:focus {
+
+.btn-default:hover,
+.btn-default:focus {
     border: 1px solid #e74c3c;
     outline: 0;
     color: #000;
     background-color: #e74c3c;
 }
-.btn-default:hover, .btn-default:focus {
+
+.btn-default:hover,
+.btn-default:focus {
     color: #fff;
 }
+
 .profile-container ul button {
-    background: transparent ;
+    background: transparent;
     margin: 10px 0 0;
-     -webkit-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
     -o-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
 }
-.profile-container ul button:hover,.profile-container ul button:focus {
-    background: #260126 ;
+
+.profile-container ul button:hover,
+.profile-container ul button:focus {
+    background: #260126;
     border-color: #260126;
 }
-.facebook-color:hover,.facebook-color:focus {
+
+.facebook-color:hover,
+.facebook-color:focus {
     border: 1px solid #8b9dc3;
     background-color: #8b9dc3;
     color: #fff;
 }
-.linkedin-color:hover,.linkedin-color:focus {
+
+.linkedin-color:hover,
+.linkedin-color:focus {
     background-color: #0075B2;
     border: 1px solid #0075B2;
     color: #fff;
 }
+
 .about-content.contact-container p {
     font-size: 20px;
     text-align: center;
 }
+
 .about-content.contact-container ul {
-     margin: 20px 0 0;
+    margin: 20px 0 0;
 }
+
 .profile .profile-container {
     text-align: left;
 }
+
 .profile-container h2 {
     text-align: center;
 }
+.contact-me .logo span {
+        color: #260126;
+    display: inline-block;
+}
+.contact-me .logo a span:hover {
+    animation: 3s logorotate;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes logorotate {
+    from {
+        transform: rotate(0deg);
+        opacity: 0.1;
+    }
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+/*loader*/
+.loader {
+    bottom: 0;
+    right:50%;
+    position: absolute;
+    padding-top: 100px;
+    width: 40px;
+    margin: auto;
+}
+.loader .circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5.5s;
+}
+.loader .circle:after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #000;
+    /* Pick a color */
+}
+.loader .circle:nth-child(2) {
+    animation-delay: 240ms;
+}
+.loader .circle:nth-child(3) {
+    animation-delay: 480ms;
+}
+.loader .circle:nth-child(4) {
+    animation-delay: 720ms;
+}
+.loader .circle:nth-child(5) {
+    animation-delay: 960ms;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(225deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  7% {
+    transform: rotate(345deg);
+    animation-timing-function: linear;
+  }
+  30% {
+    transform: rotate(455deg);
+    animation-timing-function: ease-in-out;
+  }
+  39% {
+    transform: rotate(690deg);
+    animation-timing-function: linear;
+  }
+  70% {
+    transform: rotate(815deg);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: rotate(945deg);
+    animation-timing-function: ease-out;
+  }
+  76% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(945deg);
+    opacity: 0;
+  }
+}  
 @keyframes myChange {
     from {
         opacity: 0;
