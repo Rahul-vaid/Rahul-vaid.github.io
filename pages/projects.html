@@ -1,0 +1,15 @@
+<div ng-controller="projectDescriptionController" class="about-content projects-container">
+    <h2> Projects</h2>
+    <div> 
+        <h3><span>{{record.id.title}}</span></h3>
+        <p><span>Description:</span>{{record.id.description}}</p>
+        <p><span>Role:</span>{{record.id.role}}</p>
+        <p><span>Environment:</span>{{record.id.environment}}</p>
+        <p>
+            <span>Responsibilities:</span>
+            <ul>
+            	<li ng-repeat="res in record.id.responsibilities">{{res}}</li>
+            </ul>
+        </p>
+    </div>
+</div>

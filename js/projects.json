@@ -1,0 +1,113 @@
+{
+    "projects": [
+    	{
+	    	"key":"1",
+	        "id": 
+		        {
+		            "title": "Armanino",
+		            "description": "Armanino LLP is the largest independent accounting and business consulting firm based in California. They are a nationwide leader in serving privately-held companies, as well as, non-profit organizations and public entities. They provide four main areas of service – assurance/audit, tax, consulting and business management.",
+		            "role":"UI Developer",
+		            "responsibilities":
+		            	{
+		            		"1":"User interface development using HTML, CSS and  jQuery from scratch.",
+		            		"2":"Extraction of fonts and images from the PSDs",
+		            		"3":"Participation in meetings and discussions regarding the development of the project.",
+		            		"4":"Developed pages which are browser compatible and responsive.",
+		            		"5":"Perform unit testing and fixing bugs related to HTML and CSS.",
+		            		"6":"Syncing the developed pages with Eloqua integration."
+		            	},
+		            "environment":"JavaScript (JQuery), HTML5 and  CSS3"
+		        }   
+	    },
+	    {
+	    	"key":"2" ,
+	        "id": 
+		        {
+		            "title": "Paychex",
+		            "description": "Paychex (PEO-professional employer organization) is America's largest provider of outsourced HR services and single source for employee benefits and insurance. An expanded group of workers is more attractive to regional and national health care providers and can earn lower premiums. It's also a better distributor of risk, which can help stabilize one’s SUI taxes. ",
+		            "role":"UI Developer",
+		            "responsibilities":
+			            {
+			            	"1":"Interacting with the client’s Front End Developer and lead to gather the requirements.",
+			            	"2":"Extraction of fonts (provided by our UX) and images from the PSDs.",
+			            	"3":"Developed the browser compatible and responsive (using adapt.js) layouts without using media queries.",
+			            	"4":"User interface development for the page using HTML5, CSS3, jQuery implementation with  their custom framework.",
+			            	"5":"Syncing the developed components with backend integration.",
+			            	"6":"Performed front end validation of forms using parsley.js and also perform unit testing to   ensure that the final product meets the customer’s requirements.",
+			            	"7":"Fixing bugs and working on requirements as and when shared by client."
+			        	},
+			        "environment":"HTML5, CSS3,JavaScript (JQuery), Adapt.js and Parsley.js"	      	
+		        }
+	    }, 
+	    {
+	    	"key":"3",
+	        "id": 
+		        {
+		            "title": "Visual Sonics (maintenance)",
+		            "description": "FujiFilm VisualSonics Inc. is a manufacturer of real-time, in vivo, high-resolution micro-imaging systems designed specifically for preclinical research and is a wholly owned subsidiary of SonoSite, Inc. VisualSonics’ imaging technologies allow researchers at pharmaceutical and biotechnology companies, hospitals and universities to conduct research in cardiovascular, cancer, neurobiology and developmental biology areas.",
+		            "role":"UI Developer",
+		            "responsibilities":
+		            	{
+		            		"1":"Working with Drupal developer in site maintenance and fixing any bugs which occurred.",
+		            		"2":"Working on new requirements as and when asked by client."
+		            	},
+		            "environment":"JavaScript (JQuery), HTML5, CSS3, SASS"
+		        }   
+	    },
+	    {
+	    	"key":"4",
+	        "id": 
+		        {
+		            "title": "SPLC Phase-2(Teaching Tolerance)",
+		            "description": "Founded in 1991 by the Southern Poverty Law Center, Teaching Tolerance is dedicated to reducing prejudice, improving intergroup relations and supporting equitable school experiences for our nation's children. They provide free educational materials to teachers and other school practitioners in the U.S. and Canada.",
+		            "role":"UI Developer",
+		            "responsibilities":
+		            	{
+		            		"1":" Interacting with the lead to gather the requirements.",
+		            		"2":" Developed the live site components, responsive and browser compatible layouts.",
+		            		"3":"User interface development for the page using HTML5, CSS3, jQuery implementation with Bootstrap framework.",
+		            		"4":"Fixed various issues related to the front-end, due to drupal integration, etc. Also fixed issues raised by the client.",
+		            		"5":"Syncing the developed components with drupal integration.",
+		            		"6":"Perform unit testing to ensure that the final product meets the customer’s requirements."
+		            	},
+		            "environment":"JavaScript (JQuery), HTML5, CSS3, Bootstrap"	
+		        }   
+	    },
+	    {
+	    	"key":"5",
+	        "id": 
+		        {
+		            "title": "SPLC Phase-1(Perspectives for a Diverse America)",
+		            "description": "Teaching Tolerance’s Perspectives for a Diverse America is a literacy-based curriculum that marries anti-bias social justice content with the rigor of the Common Core State Standards.",
+		        	"role":"UI Developer",
+		        	"responsibilities":
+		            	{
+		            		"1":"Interacting with the lead to gather the requirements, participation in meetings",
+		            		"2":"Developed the live site components, responsive and browser compatible layouts.",
+		            		"3":"User interface development for the page using HTML5, CSS3, jQuery implementation with Bootstrap framework.",
+		            		"4":"Fixed the issues raised by the client.",
+		            		"5":" Syncing the developed components with drupal integration between dev server to production server.",
+		            		"6":" Perform unit testing to ensure that the final product meets the customer’s requirements."
+		            	},
+		            "environment":"JavaScript (JQuery), HTML5, CSS3, Bootstrap"	
+		        }   
+	    },
+	    {
+	    	"key":"6",
+	        "id": 
+		        {
+		            "title": "Visual Sonics",
+		            "description": "FujiFilm VisualSonics Inc. is a manufacturer of real-time, in vivo, high-resolution micro-imaging systems designed specifically for preclinical research and is a wholly owned subsidiary of SonoSite, Inc. VisualSonics’ imaging technologies allow researchers at pharmaceutical and biotechnology companies, hospitals and universities to conduct research in cardiovascular, cancer, neurobiology and developmental biology areas.",
+		            "role":"UI Developer",
+		            "responsibilities":
+		            	{
+		            		"1":"User interface development using HTML, CSS, SASS, jQuery implementation with frameworks",
+		            		"2":"Perform unit testing to ensure that the final product meets the customer’s requirements",
+		            		"3":"Fixing existing bugs related to HTML, JavaScript and CSS",
+		            		"4":"Fixing browser compatibility issues"
+		            	},
+		            "environment":"JavaScript (JQuery), HTML5, CSS3, SASS"	
+		        }   
+	    }
+    ]
+}
