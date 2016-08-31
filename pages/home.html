@@ -1,6 +1,5 @@
 <div ng-controller="profileSummaryController" class="about-content profile-container">
     <h2> Profile Summary</h2>
-    <p>
         <ul>
             <li ng-repeat="summaryList in summary | limitTo:quantity">{{summaryList}}</li>
             <!-- loading rest of the data from profile summary json file -->
@@ -14,5 +13,9 @@
                 <div class='circle'></div>
             </div>
         </ul>
-    </p>
+    <h2>Projects</h2>
+        <ul ng-controller="classController" class="project-list">
+        <!-- routing based on key  -->
+            <li ng-repeat="project in projects"><a href="#projects/{{project.key}}" ng-click="addScalingClass()">{{project.id.title}}</a></li>
+        </ul>    
 </div>

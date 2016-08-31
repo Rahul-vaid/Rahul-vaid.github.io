@@ -17,26 +17,26 @@
 		<![endif]-->
 </head>
 
-<body class="profile">
+<body class="profile" ng-class="{ 'no-scroll' : showSlider }">
     <header class="main-nav" ng-controller="HeaderController as header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-12 clearfix">
                     <span class="contact-me">
                 		<span title="Contact Me" class="logo"><a ng-click="showSlider=false" href='#contact' title="Contact Me"><span>RV</span></a></span>
                 	</span>
-                    <span ng-click="showSlider = !showSlider" class="mobile-menu-link">Menu</span>
-                    <div ng-class="{ 'slider' : showSlider }" class="slider-cont">
+                    <span ng-click="$parent.showSlider = !$parent.showSlider" class="mobile-menu-link">Menu</span>
+                    <div ng-class="{ 'slider' : $parent.showSlider }" class="slider-cont">
                         <div class="nav-cont">
                             <ul class="nav navigation">
                                 <li ng-class="{active: $route.current.activetab == 'about'}" class="animate-show">
-                                    <a ng-click="showSlider=false" href="#about">Who AM I</a>
+                                    <a ng-click="$parent.showSlider=false" href="#about">Who AM I</a>
                                 </li>
                                 <li ng-class="{active: $route.current.activetab == 'portfolio'}" class="animate-show">
-                                    <a ng-click="showSlider=false" href="#portfolio">Portfolio</a>
+                                    <a ng-click="$parent.showSlider=false" href="#portfolio">Portfolio</a>
                                 </li>
                                 <li ng-class="{active: $route.current.activetab == 'contact'}" class="animate-show">
-                                    <a ng-click="showSlider=false" href='#contact'>Contact</a>
+                                    <a ng-click="$parent.showSlider=false" href='#contact'>Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -48,7 +48,7 @@
     <div class="container main-cont">
         <div class="row">
             <div class="col-sm-12">
-                <div ng-view>
+                <div ng-view ng-class="{ 'scaling' : flag }">
                     <!-- angular templating -->
                     <!-- this is where content will be injected -->
                 </div>

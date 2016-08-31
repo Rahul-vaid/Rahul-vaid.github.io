@@ -6,7 +6,7 @@
     </p>
     <div ng-controller="skillListController" class="skillset-desc">
         <h2 ng-click="skillset = !skillset" title="Click to see">Skill-Set</h2>
-        <p ng-class="{ 'ng-hide' : !skillset }"  class="scrolling-content" >&#9755;&#9755;&#32;<span ng-repeat="skill in skills">{{skill}}</span>&#9754;&#9754;</p>
+        <p ng-class="{ 'ng-hide' : !skillset }"  class="scrolling-content hidden-xs" >&#9755;&#9755;&#32;<span ng-repeat="skill in skills">{{skill}}</span>&#9754;&#9754;</p>
         <div ng-class="{ 'ng-hide' : skillset }"  class="skill-cont">
             <p>Some of the skills I have</p>
             <ul class="skill-set">
