@@ -344,8 +344,8 @@ header span.contact-me a:focus {
 }
 
 .about-content ul.skill-set li:hover {
-    background: #0a2a3b none repeat scroll 0 0;
-    border: 1px solid #0a2a3b;
+    background: #1D2120;
+    border: 1px solid #1D2120;
     color: #fff;
     -webkit-transition: all 0.5s linear 0s;
     -moz-transition: all 0.5s linear 0s;
@@ -468,6 +468,7 @@ header span.contact-me a:focus {
 
 .profile-container ul button {
     background: transparent;
+   border-color: #1d2120; 
     margin: 10px 0 0;
     -webkit-transition: background-color 0.2s ease;
     -moz-transition: background-color 0.2s ease;
@@ -477,8 +478,8 @@ header span.contact-me a:focus {
 
 .profile-container ul button:hover,
 .profile-container ul button:focus {
-    background: #0a2a3b;
-    border-color: #0a2a3b;
+    background: #1D2120;
+    border-color: #1D2120;
 }
 
 .facebook-color:hover,
@@ -562,11 +563,11 @@ header span.contact-me a:focus {
 }
 @keyframes logorotate {
     from {
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
         opacity: 0.1;
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(360deg);
         opacity: 1;
     }
 }
