@@ -111,7 +111,7 @@ header .navigation.nav-pills > li.active > a {
 }
 
 .slider-cont {
-    background: #00a7e2 ;
+    background: #334431;
     height: 100%;
     top: 95px;
     position: fixed;
@@ -285,7 +285,7 @@ div[ng-view].ng-leave-active {
 }
 
 header .navigation li.active > a {
-    color: #fff;
+    color: #000;
 }
 
 header span.contact-me .logo {
